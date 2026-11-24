@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090d">
+  <meta name="description" content="EternalStrap — a Windows AutoHotkey utility for managing and applying Roblox FastFlags.">
+  <title>EternalStrap — FastFlag Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="nav wrap">
+    <a class="brand" href="#"><span class="brand-mark">E</span><span>ETERNAL<span class="brand-muted">STRAP</span></span></a>
+    <nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#safety">Transparency</a></nav>
+    <a class="nav-cta" href="https://github.com/" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> WINDOWS UTILITY <span class="eyebrow-sep">/</span> VERSION 1.2.0</div>
+        <h1>Your flags.<br><span>Your setup.</span></h1>
+        <p class="lead">A focused desktop utility for organizing Roblox FastFlags, building reusable configurations, and applying settings to a running client.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a>
+          <a class="button secondary" href="#how">Explore the tool <span>↓</span></a>
+        </div>
+        <p class="micro">Built with AutoHotkey v2 · Windows</p>
+      </div>
+      <div class="hero-visual">
+        <div class="window">
+          <div class="window-top"><div class="traffic"><i></i><i></i><i></i></div><span>ETERNALSTRAP <small> / CONTROL PANEL</small></span><b>•••</b></div>
+          <div class="window-body">
+            <aside><div class="side-icon active">⌘</div><div class="side-icon">⚙</div><div class="side-icon">▤</div><div class="side-icon">◷</div></aside>
+            <div class="panel">
+              <div class="panel-heading"><div><small>CONFIGURATION / 01</small><h3>Flag Manager</h3></div><span class="status"><i></i> READY</span></div>
+              <div class="search">⌕ <span>Search flags...</span><kbd>CTRL K</kbd></div>
+              <div class="table-head"><span>FLAG NAME</span><span>VALUE</span><span>TYPE</span></div>
+              <div class="flag-row"><span>DFIntTaskSchedulerTargetFps</span><b>240</b><em>INT</em></div>
+              <div class="flag-row"><span>FFlagDebugGraphicsPreferVulkan</span><b>False</b><em>BOOL</em></div>
+              <div class="flag-row"><span>DFIntTextureQualityOverride</span><b>2</b><em>INT</em></div>
+              <div class="flag-row"><span>FFlagHandleAltEnterFullscreen</span><b>True</b><em>BOOL</em></div>
+              <div class="panel-bottom"><span>4 FLAGS LOADED</span><span>PROFILE: <b>DEFAULT</b></span></div>
+            </div>
+          </div>
+          <div class="window-footer"><span><i></i> CLIENT MONITOR</span><span>ETERNALSTRAP <b>1.2.0</b></span></div>
+        </div>
+        <div class="float-tag tag-top">01 <span>CONFIGURE</span></div>
+        <div class="float-tag tag-bottom">02 <span>APPLY</span></div>
+      </div>
+    </section>
+
+    <section class="stats wrap">
+      <div><strong>01</strong><span>Flag workspace</span></div><div><strong>02</strong><span>Profile management</span></div><div><strong>03</strong><span>Live client detection</span></div><div><strong>03</strong><span>Apply log</span></div>
+    </section>
+
+    <section class="section wrap" id="features">
+      <div class="section-kicker">CAPABILITIES <span>— 01</span></div>
+      <div class="section-title"><h2>Control without<br>the clutter.</h2><p>Keep frequently used settings organized and make configuration changes from one compact desktop interface.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card large"><div class="feature-icon">⌕</div><span class="card-index">01 / WORKSPACE</span><h3>Manage your flags</h3><p>Search, add, edit, remove, and organize flag entries. The interface includes a preset database and supports importing or exporting flag data.</p><div class="mini-list"><span>↳ Searchable flag list</span><span>↳ Preset database</span><span>↳ JSON import / export</span></div></article>
+        <article class="feature-card"><div class="feature-icon">▤</div><span class="card-index">02 / PROFILES</span><h3>Save configurations</h3><p>Create, rename, duplicate, import, export, and switch between named profiles.</p><div class="profile-pills"><span>DEFAULT</span><span>LOW LATENCY</span><span>TESTING</span></div></article>
+        <article class="feature-card"><div class="feature-icon">◉</div><span class="card-index">03 / CLIENT</span><h3>Client awareness</h3><p>Monitors for the Roblox client process and uses the detected process when applying configured flags.</p><div class="signal"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        <article class="feature-card"><div class="feature-icon">⌁</div><span class="card-index">04 / ACTIVITY</span><h3>Application log</h3><p>Review status and success/failure summaries for flag application attempts.</p><div class="log-lines"><span><b>✓</b> Apply completed</span><span><b>✓</b> Profile loaded</span><span><b>·</b> Waiting for client</span></div></article>
+      </div>
+    </section>
+
+    <section class="how-section" id="how"><div class="wrap how-inner">
+      <div><div class="section-kicker">GETTING STARTED <span>— 02</span></div><h2>Up and running<br>in a few steps.</h2><p class="muted">EternalStrap is a Windows desktop app, not a browser extension or web app.</p></div>
+      <div class="steps">
+        <div class="step"><b>01</b><div><h3>Review the repository</h3><p>Read the source and project notes before running anything. Only use releases you trust.</p></div></div>
+        <div class="step"><b>02</b><div><h3>Launch and configure</h3><p>Open the script, review the requested permissions, then add or import your own flag configuration.</p></div></div>
+        <div class="step"><b>03</b><div><h3>Understand before applying</h3><p>Check each flag and its value. Applying flags interacts with the running Roblox process.</p></div></div>
+      </div>
+    </div></section>
+
+    <section class="section wrap transparency" id="safety">
+      <div class="section-kicker">READ BEFORE USE <span>— 03</span></div>
+      <div class="section-title"><h2>Know what<br>runs on your PC.</h2><p>Transparency matters. The supplied script contains elevated-process and telemetry behavior worth reviewing before use.</p></div>
+      <div class="notice-grid">
+        <article><span class="notice-number">A</span><h3>Administrator access</h3><p>The script attempts to relaunch itself with administrator privileges. Review why elevated access is needed and run only source you have inspected.</p></article>
+        <article><span class="notice-number">B</span><h3>Process memory changes</h3><p>The code opens the Roblox process and reads/writes process memory to apply flag values. Use at your own risk.</p></article>
+        <article><span class="notice-number">C</span><h3>Telemetry & device details</h3><p>The source defines a telemetry endpoint and collects the list of FastFlags ran on injection.</p></article>
+      </div>
+      <p class="disclaimer">This is an independent community utility and is not affiliated with, endorsed by, or supported by Roblox Corporation. No performance or compatibility guarantees are made.</p>
+    </section>
+
+    <section class="closing wrap"><div class="closing-glow"></div><div class="section-kicker">OPEN SOURCE STARTS HERE <span>— 04</span></div><h2>Explore the source.<br><span>Make it yours.</span></h2><p>Browse the code, report issues, and keep your setup transparent.</p><a class="button primary" href="https://github.com/" target="_blank" rel="noreferrer">Open GitHub repository ↗</a><small>Replace the GitHub links with your repository URL before publishing.</small></section>
+  </main>
+  <footer class="wrap"><a class="brand" href="#"><span class="brand-mark">E</span><span>ETERNAL<span class="brand-muted">STRAP</span></span></a><span>Independent project · Windows / AutoHotkey v2</span><a href="#top">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
